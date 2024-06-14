@@ -5,6 +5,31 @@
 
 body {
     font-family: "Cascadia Code";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.info .title {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    display: flex;
+    align-items: center;
+    flex: 0.5;
+}
+
+.info .text {
+    font-size: 18px;
+    color: #1F2937;
+}
+
+.quote .text{
+    color: #1F2937;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 36px;
 }
 
 .header {
@@ -28,6 +53,7 @@ body {
 
 .bar {
     display: flex;
+    flex: 1;
 }
 
 .LOGO{
@@ -40,7 +66,7 @@ body {
 
 .links {
     display: flex;
-    gap: 8px;
+    gap: 32px;
     justify-content: center;
     flex: 1;
     align-items: center;
@@ -53,13 +79,14 @@ body {
 }
 
 .header-msg{
-    padding: 80px;
+    padding: 120px 80px;
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
 .msg {
-    width: 600px;
+    width: 500px;
 }
 
 .msg .em{
@@ -75,4 +102,119 @@ body {
     font-size: 18px;
     padding: 8px 32px;
     margin: 8px;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: #e5e7eb;
+    justify-content: center;
+
+}
+
+.quote .quote-box{
+    width: 1200px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quote-box .author {
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: right;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.img-box{
+    border-color: #3882f6;
+    border-width: 4px;
+    border-style: solid ;   
+    min-width: 128px;
+    min-height: 128px;
+    max-height: 256px;
+    flex: 1;
+    border-radius: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 2000px;
+    margin: 32px;
+    flex: 1;
+}
+
+.card {
+    max-width: 256px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin: 20px
+}
+
+
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.signup{
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    flex-grow: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color:#e5e7eb;
+    border-style: none;
+    border-width: 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    background-color: #3882f6;
+    margin: 40px auto;
+    padding: 20px;
+    flex: 1;
+    border-radius: 16px;
+}
+
+.box button {
+    color: #e5e7eb;
+    background-color: #3882f6;
+    border-radius: 8px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #e5e7eb;
+    font-size: 18px;
+    padding: 8px 32px;
+    margin: 32px 128px;
+    flex: 1;
+}
+
+.text .text1 {
+    font-size: 24px;
 }
